@@ -62,7 +62,7 @@ def add_product():
     return product_schema.jsonify(new_product)
 
 
-# Get All Products
+# Get All in Products
 @app.route('/product', methods=['GET'])
 def get_products():
     all_products = Product.query.all()
